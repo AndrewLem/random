@@ -6,7 +6,12 @@ grads_statements = []
 rows = 4
 columns = 4
 tables_folder = 'html_tables'
-html_header = " <html> <head> <style> table, th, td { border: 1px solid black; } </style> </head>"
+html_header = " <html> " \
+              "<head> " \
+              "<style> " \
+              "table, th, td { border: 1px solid black; border-collapse: collapse; } " \
+              "</style> " \
+              "</head>"
 html_footer = '</html>'
 table_header = '<table>'
 table_footer = '</table>'
