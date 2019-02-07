@@ -35,7 +35,9 @@ for i in range(0, len(grads_statements)):
             d1 = (d1 + 1) % len(grads_statements)
             if d1 == 0:
                 d2 = d2 + 1
-            table_string += cell_start + grads_statements[d1][d2 % len(grads_statements[d1])] + cell_end
+            table_string += cell_start
+            table_string += grads_statements[d1][d2 % len(grads_statements[d1])]
+            table_string += cell_end
         table_string += row_end
     table_string += table_footer + html_footer
     with open(os.path.join(tables_folder, f"{i}.html"), 'w') as f:
